@@ -38,10 +38,6 @@ export default class HomeScreen extends React.Component {
             <Text style={styles.banner}>TechTutor</Text>
 
             <Image style={styles.headshot} source={require('../assets/images/headshot.png')}></Image>
-
-            <Text style={styles.getStartedText}>
-              Change this text and your app will automatically reload.
-            </Text>
           </View>
 
           <View style={styles.helpContainer}>
