@@ -35,14 +35,12 @@ export default class HomeScreen extends React.Component {
           <View style={styles.getStartedContainer}>
             {this._maybeRenderDevelopmentModeWarning()}
 
-            <Text style={styles.getStartedText}>Get started by opening</Text>
+            <Text style={styles.banner}>TechTutor</Text>
 
-            <View style={[styles.codeHighlightContainer, styles.homeScreenFilename]}>
-              <MonoText style={styles.codeHighlightText}>screens/HomeScreen.js</MonoText>
-            </View>
+            <Image style={styles.headshot} source={require('../assets/images/headshot.png')}></Image>
 
             <Text style={styles.getStartedText}>
-              Change this text and your app will automatically.
+              Change this text and your app will automatically reload.
             </Text>
           </View>
 
@@ -92,6 +90,7 @@ export default class HomeScreen extends React.Component {
   };
 
   _handleHelpPress = () => {
+    console.log("hittinghandlehelpress");
     WebBrowser.openBrowserAsync(
       'https://docs.expo.io/versions/latest/guides/up-and-running.html#can-t-see-your-changes'
     );
@@ -102,6 +101,13 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: '#fff',
+  },
+  headshot:{
+    width:250,
+    height:250,
+  },
+  banner:{
+fontSize:50,
   },
   developmentModeText: {
     marginBottom: 20,
