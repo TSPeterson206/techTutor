@@ -40,11 +40,11 @@ export default class HomeScreen extends React.Component {
             <Image style={styles.headshot} source={require('../assets/images/headshot.png')}></Image>
           </View>
 
-          <View style={styles.helpContainer}>
+          {/* <View style={styles.helpContainer}>
             <TouchableOpacity onPress={this._handleHelpPress} style={styles.helpLink}>
               <Text style={styles.helpLinkText}>Help, it didn’t automatically reload!</Text>
             </TouchableOpacity>
-          </View>
+          </View> */}
         </ScrollView>
 
         <View style={styles.tabBarInfoContainer}>
