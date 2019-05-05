@@ -1,6 +1,7 @@
 import React from 'react';
 import {
   Image,
+  Button, 
   Platform,
   ScrollView,
   StyleSheet,
@@ -12,12 +13,15 @@ import { WebBrowser } from 'expo';
 
 import { MonoText } from '../components/StyledText';
 
+import LandingPage from './LandingPage'
+
 export default class HomeScreen extends React.Component {
   static navigationOptions = {
     header: null,
   };
 
   render() {
+    const { navigate } = this.props.navigation
     return (
       <View style={styles.container}>
         <ScrollView style={styles.container} contentContainerStyle={styles.contentContainer}>
@@ -38,13 +42,14 @@ export default class HomeScreen extends React.Component {
             <Text style={styles.banner}>TechTutor</Text>
 
             <Image style={styles.headshot} source={require('../assets/images/headshot.png')}></Image>
+            <Button title="Go To Landing Page" onPress={()=> navigate('LandingPage')}>Hello</Button>
           </View>
 
-          {/* <View style={styles.helpContainer}>
-            <TouchableOpacity onPress={this._handleHelpPress} style={styles.helpLink}>
+          <View style={styles.helpContainer}>
+            <TouchableOpacity onPress={()=> navigate('LandingPage')} style={styles.helpLink}>
               <Text style={styles.helpLinkText}>Help, it didn’t automatically reload!</Text>
             </TouchableOpacity>
-          </View> */}
+          </View>
         </ScrollView>
 
         <View style={styles.tabBarInfoContainer}>
