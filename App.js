@@ -4,12 +4,12 @@ import { AppLoading, Asset, Font, Icon } from 'expo';
 import AppNavigator from './navigation/AppNavigator';
 import {createStackNavigator, createAppContainer} from 'react-navigation';
 
-const MainNavigator = createStackNavigator({
-  Home: {screen: HomeScreen},
-  Profile: {screen: ProfileScreen},
-});
+// const MainNavigator = createStackNavigator({
+//   Home: {screen: HomeScreen},
+//   Profile: {screen: ProfileScreen},
+// });
 
-const App = createAppContainer(MainNavigator);
+// const App = createAppContainer(MainNavigator);
 
 export default class App extends React.Component {
   state = {

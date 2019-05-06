@@ -41,7 +41,7 @@ export default class HomeScreen extends React.Component {
 
             <Text style={styles.banner}>TechTutor</Text>
 
-            <Image style={styles.headshot} source={require('../assets/images/headshot.png')}></Image>
+            <Image style={styles.headshot} source={require('../assets/images/tutor.png')}></Image>
             <Button title="Go To Landing Page" onPress={()=> navigate('LandingPage')}>Hello</Button>
           </View>
 
