@@ -5,7 +5,7 @@ export default class HomeScreen extends React.Component {
   render() {
     return (
       <View style={styles.container}>
-        We have no friends!
+        <Text>We have no friends!</Text>
         <Button
           title="Add some friends"
           onPress={() =>
